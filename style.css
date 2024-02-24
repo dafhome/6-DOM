@@ -19,19 +19,21 @@ img{
     background-color: aquamarine;
     background-size: cover;
     background-position: center;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
     flex-wrap: wrap;
+    
 }
+
 
 #index-foto1{
     background-image: url(/images/gimnasio.jpg);
+    color: white;
+
 }
 #index-foto2{
     background-image: url(/images/palomitas.jpg);
+    color: black;
+
 }
 
 .logo-cine{

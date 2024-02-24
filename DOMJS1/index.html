@@ -11,13 +11,19 @@
 </head>
 
 <body>
-    <nav class="navbar bg-body-tertiary">
-        <form class="container-fluid justify-content-start p-3">
-            <a class="btn btn-outline-dark me-2" href="/DOMJS1/index.html">Peso Ideal</a>
-            <a class="btn btn-outline-dark me-2" href="/DOMJS2/index.html">Cine</a>
-        </form>
+    <nav class="print container-fluid bg-body-tertiary me-3 p-3">
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <a href="/index.html"><img class="logo-cine" src="/DOMJS1/images/logo-imc.png" alt=""></a>
+          </div>
+          <form class="d-flex align-items-center">
+            <a class="btn btn-outline-dark me-3 p-3" href="/DOMJS1/index.html">Peso Ideal</a>
+            <a class="btn btn-outline-dark me-3 p-3" href="/DOMJS2/index.html">Cine</a>
+          </form>
+        </div>
+    
       </nav>
-      <div class="container mt-4" id="containerimagen">
+    <div class="container mt-4" id="containerimagen">
         <img class="imagen" src="/DOMJS1/images/imc.jpeg" alt="">
 
     </div>
@@ -25,7 +31,7 @@
     <form class="mx-5 mt-5">
         <div class="mb-3">
             <label for="altura" class="form-label">Tu Altura</label>
-            <input type="number" class="form-control p-3" id="altura"  placeholder="175 cm">
+            <input type="number" class="form-control p-3" id="altura" placeholder="175 cm">
             <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
         </div>
 
@@ -39,7 +45,9 @@
     <button class="btn btn-primary p-3 mx-5 mt-2" onclick=calculoImc()>Calcula tu peso Ideal</button>
 
     <div class="alert alert-warning mt-4 mx-5" role="alert" id="pesoIdeal">
-        Para conocer cuál es tu peso ideal, deberás medir tu altura siempre en metros y tu peso en kilos. Una vez hecho, realiza una operación simple: divide tu peso entre tu altura al cuadrado para obtener el IMC (indice de masa corporal). Si tu IMC es inferior a 18.5, se podría considerar que estás por debajo del peso recomendado.
+        Para conocer cuál es tu peso ideal, deberás medir tu altura siempre en metros y tu peso en kilos. Una vez hecho,
+        realiza una operación simple: divide tu peso entre tu altura al cuadrado para obtener el IMC (indice de masa
+        corporal). Si tu IMC es inferior a 18.5, se podría considerar que estás por debajo del peso recomendado.
     </div>
 
 
