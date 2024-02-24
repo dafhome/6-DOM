@@ -1,0 +1,36 @@
+span{
+    font-size: x-large;
+}
+#containerimagen{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    border-radius: 5px;
+    width: 60%;
+}
+
+.index-foto{
+    width: 400px;
+    height: 600px;
+    background-color: aquamarine;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#index-foto1{
+    background-image: url(/images/IMC.jpeg);
+}
+#index-foto2{
+    background-image: url(/images/entradas.jpeg);
+}
+
+.logo-cine{
+    width: 100px;
+}
