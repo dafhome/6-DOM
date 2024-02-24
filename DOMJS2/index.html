@@ -8,12 +8,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive&family=Roboto:wght@300;400&family=Special+Elite&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 
-<body>
-  <form action="" method="get"></form>
-  <nav class="container-fluid bg-body-tertiary me-3 p-3" action="index.html" method="get">
+<body class="">
+  <nav class="container-fluid bg-body-tertiary me-3 p-3">
     <div class="d-flex align-items-center justify-content-between">
       <div>
         <img class="logo-cine" src="/DOMJS2/images/Cinesa.png" alt="">
@@ -26,7 +28,7 @@
 
   </nav>
   <main class="container">
-    <h1 class="py-5">🎟️ ¡Compra aquí tus entradas! 🎫</h1>
+    <h1 class="py-2">🎟️ ¡Compra aquí tus entradas! 🎫</h1>
     <form class="row g-3">
       <div class="col-md-6">
         <label for="nombre" class="form-label">Nombre</label>
@@ -37,135 +39,151 @@
         <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Doe">
       </div>
 
-      <div class="container-carrousel-cartelera container-fluid col-md-6 mt-3">
-        <label for="" class="form-label">Elige tu película:</label>
+      <div class="container-carrousel-cartelera container-fluid col-xl-6 mt-3">
+        <p class="form-label">Elige tu película:</p>
         <div class="carrousel-cartelera">
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio1"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera1" for="radio1"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio1">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="Dune: parte dos"
+              id="radio1" checked>
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio1">
-              Aquaman y el Reino Perdido
+              Dune: parte dos
             </label>
           </div>
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio2"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera2" for="radio2"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio2">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="Politicamente Incorrectos"
+              id="radio2">
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio2">
-              Aquaman y el Reino Perdido
+              Politicamente Incorrectos
             </label>
           </div>
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio3"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera3" for="radio3"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio3">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="Madame Web"
+              id="radio3">
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio3">
-              Aquaman y el Reino Perdido
+              Madame Web (2024)
             </label>
           </div>
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio4"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera4" for="radio4"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio4">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="Bob Marley: One Love"
+              id="radio4">
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio4">
-              Aquaman y el Reino Perdido
+              Bob Marley: One Love
             </label>
           </div>
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio5"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera5" for="radio5"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio5">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="Cualquiera menos Tu"
+              id="radio5">
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio5">
-              Aquaman y el Reino Perdido
+              Cualquiera menos Tu
             </label>
           </div>
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio6"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera6" for="radio6"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio6">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="Guardianes de la Noche"
+              id="radio6">
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio6">
-              Aquaman y el Reino Perdido
+              Guardianes de la Noche
             </label>
           </div>
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio7"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera7" for="radio7"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio7">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="Ferrari"
+              id="radio7">
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio7">
-              Aquaman y el Reino Perdido
+              Enzo Ferrari (2024)
             </label>
           </div>
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio8"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera8" for="radio8"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio8">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="Horror Park"
+              id="radio8">
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio8">
-              Aquaman y el Reino Perdido
+              Horror Park (2024)
             </label>
           </div>
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio9"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera9" for="radio9"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio9">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="Secretos de un Escándalo"
+              id="radio9">
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio9">
-              Aquaman y el Reino Perdido
+              Secretos de un Escándalo
             </label>
           </div>
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio10"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera10" for="radio10"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio10">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="Ocho Apellidos Marroquis"
+              id="radio10">
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio10">
-              Aquaman y el Reino Perdido
+              8 Apellidos Marroquís
             </label>
           </div>
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio11"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera11" for="radio11"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio11">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido"
+              id="radio11">
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio11">
               Aquaman y el Reino Perdido
             </label>
           </div>
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio12"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera12" for="radio12"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio12">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="The Beekeeper"
+              id="radio12">
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio12">
-              Aquaman y el Reino Perdido
+              The Beekeeper
             </label>
           </div>
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio13"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera13" for="radio13"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio13">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="Chicas Malas"
+              id="radio13">
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio13">
-              Aquaman y el Reino Perdido
+              Chicas Malas (2024)
             </label>
           </div>
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio14"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera14" for="radio14"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio14">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="Cuando Acecha la Maldad"
+              id="radio14">
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio14">
-              Aquaman y el Reino Perdido
+              Cuando Acecha
             </label>
           </div>
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio15"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera15" for="radio15"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio15">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="El Correo"
+              id="radio15">
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio15">
-              Aquaman y el Reino Perdido
+              El Correo (2024)
             </label>
           </div>
           <div class="d-flex flex-column gap-2 tarjeta">
-            <label class="imagen-cartelera" for="radio16"></label>
+            <label class="imagen-cartelera" id="imagen-cartelera16" for="radio16"></label>
 
-            <input class="btn-check" type="radio" name="flexRadioDefault" value="Aquaman y el Reino Perdido" id="radio16">
+            <input class="btn-check" type="radio" name="flexRadioDefault" value="Guardianes del Museo"
+              id="radio16">
             <label class="btn btn-lg btn-outline-dark titulo-cartelera" for="radio16">
-              Aquaman y el Reino Perdido
+              Guardianes del Museo
             </label>
           </div>
         </div>
@@ -174,10 +192,10 @@
 
 
       </div>
-      <div class="d-md-flex gap-4 flex-column align-items-center justify-content-center col-md-6">
+      <div class="d-md-flex gap-4 flex-column align-items-center justify-content-center col-xl-6">
         <div class="col-12">
           <label for="email" class="form-label">Correo Electrónico</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="miemail@gmail.com">
+          <input type="email" class="form-control" id="email" name="email" placeholder="miemail@gmail.com" autocomplete="on">
         </div>
         <div class="col-12 d-flex justify-content-between">
           <div class="col-5">
@@ -193,10 +211,11 @@
 
 
         </div>
-        <label for="customRange3" class="form-label">Elige el asiento, representa la ubicación frente a la pantalla. </label>
-        <input type="range" class="form-range" min="1" max="19" name="asiento" step="1" id="customRange3">
-        <select class="form-select form-select-lg my-3" name="fila" aria-label="Large select example">
-          <option selected>Elige la fila donde te quieres sentar</option>
+        <label for="asiento" class="form-label">Elige el asiento, representa la ubicación frente a la pantalla.
+        </label>
+        <input type="range" class="form-range" min="1" max="19" name="asiento" step="1" id="asiento">
+        <select class="form-select form-select-lg my-3" name="fila" id="fila" aria-label="Large select example">
+          <option selected value="0">Elige la fila donde te quieres sentar</option>
           <option value="1">Uno</option>
           <option value="2">Dos</option>
           <option value="3">Tres</option>
@@ -218,55 +237,90 @@
           <option value="19">Diecinueve</option>
 
         </select>
-        
+
 
       </div>
-      <div class="d-grid gap-2 col-6 mx-auto my-4">
-        <button type="submit" class="btn btn-primary p-3 mx-5">Comprar Entradas</button>
 
-        <!-- onclick=calculoImc() -->
-      </div>
     </form>
-    <div class="espacio-entrada my-5">
+    <div class="d-grid gap-2 col-6 mx-auto my-4">
+      <button class="btn btn-primary p-3 mx-5" onclick=datosEntrada()>Comprar Entradas</button>
+      <!-- onclick=calculoImc() -->
+    </div>
+    <div class="espacio-entrada cold-md-6 my-2">
       <div class="container-entrada" id="containerimagen">
-        <div class="container entrada">
+        <div class="entrada">
           <!-- <img class="imagen" src="/DOMJS2/images/ticket.png" alt=""> -->
         </div>
         <div class="container entrada-texto">
           <div class="container d-flex justify-content-between align-items-center">
-            <div class="bg-primary entrada-left">
+            <div class="entrada-left d-flex flex-column justify-content-between py-1">
               <div>
-                <img id="logo-cine" src="/DOMJS2/images/Cinesa.png" alt="">
-            
-                <h3 id="pelicula">Aquaman y el Reino Perdido</h3>
+                <img id="logo-cine" src="/DOMJS2/images/Cinesa.png" style="display: none;" alt="">
+
+                <h3 id="pelicula"></h3>
               </div>
-              <div>
-                <div class="d-flex justify-content-between">
-                  <p>Nombre y Apellidos</p>
-                <p>david.alfernandez@gmail.com</p>
+              <div class="texto d-flex justify-content-around align-items-center" style="opacity: 0%;" id="cinema-ticket"> 
+                <div class="cinema-ticket">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+        
                 </div>
-                <div class="d-flex justify-content-between">
-                  <p>02-02-2024 18:09</p>
-                  <p>S1 F19 B2</p>
+                <div class="cinema-ticket">
+                  <h2>CINEMA TICKET</h2>
                 </div>
-                
+                <div class="cinema-ticket">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  
+                </div>
+              </div>
+              <div class="">
+                <div class="texto d-flex justify-content-between">
+                  <p id="nombre-entrada"></p>
+                  <p id="mail-entrada"></p>
+                </div>
+                <div class="texto d-flex justify-content-between">
+                  <p id="fecha-hora"></p>
+                  <p id="asiento-entrada"></p>
+                </div>
+
               </div>
             </div>
-            <div class="bg-primary entrada-right">
-              <p>Aquaman</p>
-              <img src="/DOMJS2/images/barcode.gif" alt="">
-              <p>02-02-2024 18:09</p>
-              <p>S1 F19 B2</p>
+            <div class="texto entrada-right d-flex flex-column justify-content-between align-items-center p-0">
+              <div class="d-flex flex-column justify-content-between align-items-center p-2">
+                <p class="text-center" id="pelicula2"></p>
+                <img id="qr" style="display: none;" src="/DOMJS2/images/barcode.gif" alt="">
+              </div>
+              <div class="d-flex flex-column align-items-center justify-content-end p-0 m-0">
+                <p id="fecha-hora2"><small></small></p>
+                <p id="asiento-entrada2"><small></small></p>
+              </div>
+              
+              
             </div>
 
 
-            
+
           </div>
         </div>
       </div>
 
     </div>
-   
+
   </main>
   <footer class="container-fluid bg-body-tertiary me-3 p-3 d-flex justify-content-center">
 
@@ -276,7 +330,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   <script src="main.js"></script>
 </body>
 

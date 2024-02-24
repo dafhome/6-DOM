@@ -4,7 +4,14 @@ span{
 .espacio-entrada{
     display: flex;
     justify-content: center;
+    /* font-weight: 400; */
+  /* font-style: normal; */
 }
+.texto{
+    font-family: "Special Elite", system-ui;
+
+}
+
 #containerimagen{
     position: relative;
     margin: 0;
@@ -34,7 +41,7 @@ span{
     width: 750px;
     height: 312.38px;
     
-    background-color: rgba(0, 0, 0, 0.146);
+    /* background-color: rgba(0, 0, 0, 0.146); */
 }
 .entrada-left{
     width: 510px;
@@ -87,7 +94,6 @@ body{
     height: 228px;
     object-fit:fill;
     border-radius: 10px;
-    background-image: url(/DOMJS2/images/cartelera/aquaman.jpeg);
     background-size: cover;
 }
 .option-cartelera{
@@ -103,4 +109,62 @@ body{
 
 
 .entrada-texto{
+}
+
+/* .cinema-ticket{
+    display: none;
+} */
+#fecha-hora2{
+    text-align: center;
+}
+
+
+#imagen-cartelera1{
+    background-image: url(/DOMJS2/images/cartelera/dune2.jpeg);
+}
+#imagen-cartelera2{
+    background-image: url(/DOMJS2/images/cartelera/politicamente_incorrectos.jpeg);
+}
+#imagen-cartelera3{
+    background-image: url(/DOMJS2/images/cartelera/madame_web.jpeg);
+}
+#imagen-cartelera4{
+    background-image: url(/DOMJS2/images/cartelera/bob_marley.jpeg);
+}
+#imagen-cartelera5{
+    background-image: url(/DOMJS2/images/cartelera/cualquiera-menos-tu.jpeg);
+}
+#imagen-cartelera6{
+    background-image: url(/DOMJS2/images/cartelera/guardianes_de_la_noche.jpeg);
+}
+#imagen-cartelera7{
+    background-image: url(/DOMJS2/images/cartelera/ferrari.jpeg);
+}
+#imagen-cartelera8{
+    background-image: url(/DOMJS2/images/cartelera/horror_park.jpeg);
+}
+#imagen-cartelera9{
+    background-image: url(/DOMJS2/images/cartelera/secretos_de_un_escandalo.jpeg);
+}
+#imagen-cartelera10{
+    background-image: url(/DOMJS2/images/cartelera/ocho-apellidos-marroquis.jpeg);
+}
+#imagen-cartelera11{
+    background-image: url(/DOMJS2/images/cartelera/aquaman.jpeg);
+}
+#imagen-cartelera12{
+    background-image: url(/DOMJS2/images/cartelera/beekeeper.jpeg);
+}
+#imagen-cartelera13{
+    background-image: url(/DOMJS2/images/cartelera/chicas-malas.jpeg);
+}
+#imagen-cartelera14{
+    background-image: url(/DOMJS2/images/cartelera/cuando-acecha-la-maldad.jpeg);
+}
+
+#imagen-cartelera15{
+    background-image: url(/DOMJS2/images/cartelera/elcorreo-19enero.jpeg);
+}
+#imagen-cartelera16{
+    background-image: url(/DOMJS2/images/cartelera/guardianes-museo.jpeg);
 }
