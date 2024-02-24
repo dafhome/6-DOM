@@ -4,6 +4,8 @@ span{
 #containerimagen{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 img{
@@ -22,13 +24,14 @@ img{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 #index-foto1{
-    background-image: url(/images/IMC.jpeg);
+    background-image: url(/images/gimnasio.jpg);
 }
 #index-foto2{
-    background-image: url(/images/entradas.jpeg);
+    background-image: url(/images/palomitas.jpg);
 }
 
 .logo-cine{
