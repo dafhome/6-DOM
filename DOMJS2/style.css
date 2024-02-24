@@ -1,11 +1,51 @@
 span{
     font-size: x-large;
 }
-#containerimagen{
+.espacio-entrada{
     display: flex;
     justify-content: center;
 }
-
+#containerimagen{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 750px;
+    height: 312.38px;
+}
+#logo-cine{
+    width: 200px;
+}
+.entrada{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 750px;
+    height: 312.38px;
+    background-image: url(/DOMJS2/images/ticket2.png);
+    background-position: center;
+    background-size: cover;
+}
+.entrada-texto{
+    display: flex;
+    /* background-color: black; */
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 750px;
+    height: 312.38px;
+    
+    background-color: rgba(0, 0, 0, 0.146);
+}
+.entrada-left{
+    width: 510px;
+    height: 270px;
+    padding: 20px;
+}
+.entrada-right{
+    width: 130px;
+    height: 270px;
+    padding: 20px;
+}
 img{
     border-radius: 5px;
     width: 80%;
@@ -13,4 +53,54 @@ img{
 
 body{
     background-color: rgb(22, 0, 89);
+}
+.logo-cine{
+    width: 300px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.carrousel-cartelera {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    text-align: center;
+    overflow: scroll;
+}
+
+.tarjeta {
+    padding: 20px;
+    width: 600px;
+    font-size: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+}
+
+.imagen-cartelera{
+    width: 160px;
+    height: 228px;
+    object-fit:fill;
+    border-radius: 10px;
+    background-image: url(/DOMJS2/images/cartelera/aquaman.jpeg);
+    background-size: cover;
+}
+.option-cartelera{
+    width: 160px;
+    
+}
+
+.titulo-cartelera{
+/* con esto hay que hacer un media query para cuando es muy pequeño subirle el tamaño */
+    
+}
+
+
+
+.entrada-texto{
 }
