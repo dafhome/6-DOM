@@ -33,6 +33,8 @@ function datosEntrada (){
     document.getElementById("cinema-ticket").style.opacity = "100%";
     document.getElementById("logo-cine").style.display = "block";
     document.getElementById("qr").style.display = "block";
+    document.getElementById("foto-entrada").style.display = "block";
+
 
 
 
@@ -44,5 +46,5 @@ function datosEntrada (){
     document.getElementById("pelicula2").innerText = pelicula;
     document.getElementById("fecha-hora2").innerText = fecha + " " + hora;
     document.getElementById("asiento-entrada2").innerText = "S"+sala+" F"+fila+" B"+asiento;
-
+    document.getElementById("foto-entrada").style.backgroundImage = "url(/DOMJS2/images/cartelera/option/"+radio+".jpeg)";
 }

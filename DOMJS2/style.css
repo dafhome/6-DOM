@@ -1,75 +1,15 @@
-span{
-    font-size: x-large;
-}
-.espacio-entrada{
-    display: flex;
-    justify-content: center;
-    /* font-weight: 400; */
-  /* font-style: normal; */
-}
+
 .texto{
     font-family: "Special Elite", system-ui;
-
 }
 
-#containerimagen{
-    position: relative;
-    margin: 0;
-    padding: 0;
-    width: 750px;
-    height: 312.38px;
-}
-#logo-cine{
-    width: 200px;
-}
-.entrada{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 750px;
-    height: 312.38px;
-    background-image: url(/DOMJS2/images/ticket2.png);
-    background-position: center;
-    background-size: cover;
-}
-.entrada-texto{
-    display: flex;
-    /* background-color: black; */
-    position:absolute;
-    top: 0px;
-    left: 0px;
-    width: 750px;
-    height: 312.38px;
-    
-    /* background-color: rgba(0, 0, 0, 0.146); */
-}
-.entrada-left{
-    width: 510px;
-    height: 270px;
-    padding: 20px;
-}
-.entrada-right{
-    width: 130px;
-    height: 270px;
-    padding: 20px;
-}
-img{
-    border-radius: 5px;
-    width: 80%;
-}
+/*********************** navbar ************************/
 
-body{
-    background-color: rgb(22, 0, 89);
-}
 .logo-cine{
-    width: 300px;
-}
-.navbar{
-    display: flex;
-    justify-content: space-between;
+    width: 20vw;
 }
 
-
+/*********************** carrousel ************************/
 .carrousel-cartelera {
     display: flex;
     justify-content: left;
@@ -77,7 +17,6 @@ body{
     text-align: center;
     overflow: scroll;
 }
-
 .tarjeta {
     padding: 20px;
     width: 600px;
@@ -98,26 +37,7 @@ body{
 }
 .option-cartelera{
     width: 160px;
-    
 }
-
-.titulo-cartelera{
-/* con esto hay que hacer un media query para cuando es muy pequeño subirle el tamaño */
-    
-}
-
-
-
-.entrada-texto{
-}
-
-/* .cinema-ticket{
-    display: none;
-} */
-#fecha-hora2{
-    text-align: center;
-}
-
 
 #imagen-cartelera1{
     background-image: url(/DOMJS2/images/cartelera/dune2.jpeg);
@@ -161,10 +81,70 @@ body{
 #imagen-cartelera14{
     background-image: url(/DOMJS2/images/cartelera/cuando-acecha-la-maldad.jpeg);
 }
-
 #imagen-cartelera15{
     background-image: url(/DOMJS2/images/cartelera/elcorreo-19enero.jpeg);
 }
 #imagen-cartelera16{
     background-image: url(/DOMJS2/images/cartelera/guardianes-museo.jpeg);
+}
+
+
+/*********************** datos texto entrada ************************/
+#logo-cine{
+    width: 200px;
+    display: none;
+}
+#qr{
+    max-width: 80px;
+    display: none;
+}
+#cinema-ticket{
+    opacity: 0%;
+}
+#containerimagen{
+    margin: 0;
+    padding: 0;
+    width: 750px;
+    height: 312.38px;
+}
+.entrada-texto{
+    width: 750px;
+    height: 312.38px;
+    background-image: url(/DOMJS2/images/ticket2.png);
+    filter: grayscale(90%);
+
+    background-position: center;
+    background-size: cover;
+}
+.entrada-left{
+    width: 555px;
+    height: 270px;
+    padding: 20px;
+}
+.entrada-right{
+    width: 150px;
+    height: 270px;
+    padding: 20px;
+}
+
+#fecha-hora2{
+    text-align: center;
+}
+#foto-entrada{
+    width: 80px;
+    height: 114px;
+    border-radius: 5px;
+    display: none;
+    background-image: ;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.514);
+
+}
+@media print {
+    .print{
+        display: none;
+        opacity: 0%;
+    }
+
 }
