@@ -34,6 +34,7 @@
     object-fit:fill;
     border-radius: 10px;
     background-size: cover;
+    background-position: center;
 }
 .option-cartelera{
     width: 160px;
