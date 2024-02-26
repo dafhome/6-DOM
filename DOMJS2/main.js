@@ -9,13 +9,6 @@ function datosEntrada (){
     let hora = document.getElementById("hora").value;
     let asiento = document.getElementById("asiento").value;
     let fila = document.getElementById("fila").value;
-    console.log(nombre);
-    console.log(apellidos);
-    console.log(email);
-    console.log(fecha);
-    console.log(hora);
-    console.log(asiento);
-    console.log(fila);
 
     let radio;
     let sala;
@@ -24,19 +17,15 @@ function datosEntrada (){
         if (document.getElementById(r).checked == true){
             radio = r;
             sala = i;
+            i=17;
         }
-        }
+    }
     let pelicula = document.getElementById(radio).value;
-
-
 
     document.getElementById("cinema-ticket").style.opacity = "100%";
     document.getElementById("logo-cine").style.display = "block";
     document.getElementById("qr").style.display = "block";
     document.getElementById("foto-entrada").style.display = "block";
-
-
-
 
     document.getElementById("pelicula").innerText = pelicula;
     document.getElementById("nombre-entrada").innerText = nombre + " " + apellidos;
