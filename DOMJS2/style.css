@@ -144,7 +144,8 @@
 @media print {
     .print{
         display: none;
-        opacity: 0%;
+        visibility: hidden;
+        /* opacity: 0%; */
     }
 
 }
